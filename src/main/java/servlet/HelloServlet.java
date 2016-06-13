@@ -21,7 +21,7 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException {
         ServletOutputStream out = resp.getOutputStream();
         
-        out.write(("New server address is: "+InetAddress.getLocalHost().toString()).getBytes());
+        out.write(("Our new Opsclick server address is: "+InetAddress.getLocalHost().toString()).getBytes());
         out.flush();
         out.close();
     }
